@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "targets": {
@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "conFusion"
+  "defaultProject": "conFusion",
+  "cli": {
+    "analytics": false
+  }
 }
