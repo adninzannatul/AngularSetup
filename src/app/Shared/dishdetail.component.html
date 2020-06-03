@@ -19,9 +19,11 @@
         <button mat-button>LIKE</button>
         <button mat-button>SHARE</button>
       </mat-card-actions>
-    </mat-card>
-           
+    </mat-card> 
   </div> 
+    <div [hidden]="dish">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
 <div>
     <mat-card-header>
         <mat-card-title>
@@ -38,7 +40,9 @@
       </p> 
     </mat-card-content>
         </mat-list>
-    </div>    
-  
+    </div> 
+   <div [hidden]="dish">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div> 
 </div>
     
