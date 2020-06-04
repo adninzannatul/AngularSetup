@@ -2,7 +2,7 @@
      fxLayoutGap="20px"
          rowHeight="200px"> 
 
-<div fxFlex *ngIf="dish" >
+<div fxFlex *ngIf="dish" [@visibility]="visibility" >
     <mat-card>
       <mat-card-header>
         <mat-card-title>
@@ -27,7 +27,7 @@
     <div [hidden]="dish">
     <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
   </div>
-<div *ngIf= "dish">
+<div fxFlex *ngIf="dish" [@visibility]="visibility">
     <mat-card-header>
         <mat-card-title>
           <h3>Comments</h3>
